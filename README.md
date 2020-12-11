@@ -14,5 +14,6 @@ In the menu, the Accommodations and Activities links are anchors that should lea
 
 Two mock-ups: one desktop and one mobile. The site will also have to be adapted for tablets. You are free to make the necessary adaptations with the layout, as long as no elements are cut, and the text is a sufficient size. I’ll let you choose the appropriate breakpoints.
 As I didn't know which image sizes and formats you need, I exported a variety. I’ll let you choose the most suitable format concerning resolution and loading time.
-The icons come from the Font Awesome library. The colors of the chart are blue #0065FC and its lighter version #DEEBFF, as well as grey for the background #F2F2.
+The icons come from the Font Awesome library. 
+The colors of the chart are Blue #0065FC and its lighter version #DEEBFF, as well as grey for the background #F2F2.
 The site font is Raleway.
