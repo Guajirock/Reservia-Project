@@ -78,7 +78,7 @@ font size: 1.2em;
 color:white;
 }
 .btnsearch:hover{
-  background:red;
+  background:rgb(180, 174, 240);
   cursor: pointer;
 }
 /*hasta aqui NO TOCAR-->*/
