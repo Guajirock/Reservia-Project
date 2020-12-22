@@ -1,0 +1,237 @@
+.body {
+  font-family: Raleway;
+  font-size: 14px;
+  font: black;
+  background-color:white;
+}
+.wrapper {
+   width: 100%;
+   max-width:1920px;
+   margin:0 auto;
+}
+.tophead {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.logo {
+  width: 60%;
+}
+.new-nav {
+  width: 40%;
+}
+.new-nav ul{
+list-style: none;
+}
+.new-nav ul li{
+  float: left;
+  padding-left: 20px;
+}
+.new-nav ul li a{ 
+  text-decoration: none;
+  color: #0065fc;
+}
+.new-nav ul li a.active{
+  color: rgb(68, 65, 65);
+}
+
+.new-nav ul li a:hover{
+  color:#b32546;
+}
+.searchbox {
+  width: 100%;
+  height: 40px;
+}
+.contentsearchbox{
+  display:inline-flex;
+}
+.iconsearch {
+ background: #f2f2f2;
+ width:50px;
+ padding:3px;
+ border-radius: 5px 0 0 5px;
+ text-align: center;
+}
+.iconsearch i {
+color:black;
+font-size: 16px;
+padding:3px;
+text-align: center;
+} 
+.inputSearch{
+font-size: 14px;
+width:150px;
+height:50px;
+padding-left: 5px;
+border-color: #f2f2f2;
+}
+.btnsearch {
+  background: #0065FC;
+  font-size: 14px;
+  width:80px;
+  height:50px;
+padding:3px;
+border-radius: 0 10px  10px 0;
+text-align: center;
+border:none;
+font size: 1.2em;
+color:white;
+}
+.btnsearch:hover{
+  background:red;
+  cursor: pointer;
+}
+/*hasta aqui NO TOCAR-->*/
+.filtersbox{
+display:inline-flex;
+width: 100%;
+height: 60px;
+margin-top:30px;
+}
+.contentfiltersbox{
+  display:inline-flex;
+width: 100%;
+height: 60px;
+margin:30px 0 0 15px;
+}
+/*.filters {
+display: flex;
+flex-direction: row;
+justify-content: left;
+color:white;
+font-size: 14px;
+background: #0065FC;
+width: 70px;
+padding: 15px;
+border-radius: 10px 0 0 10px;
+text-align:center;
+margin: 10px;
+}
+.card-container {
+width: 65%;
+height:500px;
+padding: 10px 10px 10px 10px;
+border-radius: 25px;
+background-color:lightgray;
+}
+.card {
+display:flex;
+flex-direction:row;
+width: 250px;
+height:250px;
+padding: 15 px;
+background-color:white;
+margin:5px 5px 5px 5px;
+border-radius: 25px;
+}
+
+.sidebar {display: flex;
+flex-direction: row;
+width: 35%;
+height:500px;
+padding: 10px 10px 10px 10px;
+border-radius: 25px;
+background-color:lightgray;
+} /*
+/*  <!--Searchbox-->
+  <div class="wrapper">
+    <div class="searchbox">
+      <p><b> Find a place for your dream vacation</b> <br>Downtown or in nature</br> </p>
+    </div>
+    <div>
+      <div class="iconsearch"><i class="fas fa-map-marker-alt"></i></div>
+      <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+      <button class="btnsearch">Search</button>
+    </div>
+    <!-- Filters-->
+    <div class="wrapper">
+      <p><b>Filters</b></p>
+  
+      <div class="filters">
+        
+      </div>
+      <div class="filters">
+        <div class="filters"><i class="fas fa-money-bill-wave"></i></i></div>
+        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+        <div class="filters"><i class="fas fa-child"></i>"</i></div>
+        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+        <div class="filters"><i class="fas fa-heart"></i></i></div>
+        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+        <div class="filters"><i class="fas fa-dog"></i></i></div>
+        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+      </div>
+<div class="wrapper">
+   <section class="card-container">
+     <h4><b> Acommodations in Marseille</h4>
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+       </section>
+</div class="wrapper">
+  <section >
+    <div> <aside class="sidebar">
+    <div class="card">1 </div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+    </section> </div> 
+<!-- <div class="wrapper">
+   <section class="card-container">
+     <h4><b> Acommodations in Marseille</h4>
+     <div class= card>
+       <img src="images/some-img.png" alt="marseille beach" title="guest room" />
+       <div class= card2>
+       <img src="images/some-img.png" alt="Toulouse" title="Bath Room" />
+   <div> </section>
+     <!--  <div class= card nth child>
+       <img src="images/some-img.png" alt="toulosse snow" title="bath room" />
+   <div>--> 
+     
+   
+      <!--next block suggested structure
+    <section class="mainbox">
+      <h2>This Block contains cards</h2>
+
+      <div class="basic-card-wrapper">
+        <section class="bas-card">
+          <img src="images/some-img.png" alt="some broken image" title="some broken image" />
+          <h3>This Basic Card</h3>
+          <p>description</p>
+          <section class="rating">*****</section>
+        </section>
+        <section class="main box">
+          <h2>This Block contains cards</h2>
+
+          <div aside class="sidebar">
+            <section class="bas-card">
+              <img src="images/some-img.png" alt="some broken image" title="some broken image" />
+              <h3>This Basic Card</h3>
+              <p>description</p>
+              <section class="rating">*****</section>
+            </section>
+            </aside></div>
+
+          <section class="bas-card">
+            <img src="images/some-img.png" alt="some broken image" title="some broken image" />
+            <h3>This Basic Card</h3>
+            <p>description</p>
+            <section class="rating">*****</section>
+          </section>
+
+          <section class="bas-card">
+            <img src="images/some-img.png" alt="some broken image" title="some broken image" />
+            <h3>This Basic Card</h3>
+            <p>description</p>
+            <section class="rating">*****</section>
+          </section>
+      </div>
+
+    
+    </section>-->
+
+      <footer></footer>*/
