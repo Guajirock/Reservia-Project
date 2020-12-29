@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html,body{
   margin:0;
   padding:0;
@@ -9,11 +12,8 @@ body {
  background-color:white;
 }
 .wrapper {
-  max-width: 1366px;
-  margin:auto;
- /*width: 100%;
- max-width:1920px;
- margin: 0 auto;*/
+ max-width: 1366px;
+ margin:auto;
 }
 .tophead {
  display: flex;
@@ -80,7 +80,7 @@ body {
  border-radius: 0 10px  10px 0;
  text-align: center;
  border:none;
- font size: 1.2em;
+ font-size: 1.2em;
  color:white;
 }
 .btnsearch:hover{
@@ -100,177 +100,97 @@ body {
  height: 60px;
 }
 .filtersbox .text{
-  font-size: 1rem;
-  margin: auto;
-  padding: 0;
+ font-size: 1rem;
+ margin: auto;
+ padding: 0;
 }
 
 .filters{
-  border:none;
-  margin:0;
-  margin-left: 20px;
-  padding:0;
-  background:none;
+ border:none;
+ margin:0;
+ margin-left: 20px;
+ padding:0;
+ background:none;
 }
 .filters i{
-  background: cornflowerblue;
-  border-radius: 50%;
-  color:#0065fc;
-  padding:17px;
+ background: #DEEBFF;
+ border-radius: 50%;
+ color:#0065fc;
+ padding:17px;
 }
 .filters:nth-child(1) i{
-  padding:17px 15px;
+ padding:17px 15px;
 }
 .filters:nth-child(2) i{
-  padding:17px 19px; 
+ padding:17px 19px; 
 }
-.filters span{
-  border:2px solid lightgray;
-  border-left: none;
-  border-radius: 0 35px 35px 0;
-  padding:15px 20px 15px 40px;
-  margin: -20px
-  
+.filters span {
+ border:2px solid lightgray;
+ border-left: none;
+ border-radius: 0 35px 35px 0;
+ padding:15px 20px 15px 40px;
+ margin: -20px  
 }
-/*.filters {
-display: flex;
-flex-direction: row;
-justify-content: left;
-color:white;
-font-size: 14px;
-background: #0065FC;
-width: 70px;
-padding: 15px;
-border-radius: 10px 0 0 10px;
-text-align:center;
-margin: 10px;
+.activities {
+ width: 65%;
+ height:auto;
+ padding: 10px 10px 10px 10px;
+ border-radius: 25px;
+ background-color:#f2f2f2;
 }
-.card-container {
-width: 65%;
-height:500px;
-padding: 10px 10px 10px 10px;
-border-radius: 25px;
-background-color:lightgray;
+.card-container{
+  display:flex;
+  flex-wrap: wrap;
 }
 .card {
-display:flex;
-flex-direction:row;
-width: 250px;
-height:250px;
-padding: 15 px;
-background-color:white;
-margin:5px 5px 5px 5px;
-border-radius: 25px;
+width: 30%; 
+ /* height:200px; */
+ padding: 15px;
+ background-color:white;
+ margin:5px 5px 5px 5px;
+ border-radius: 25px;
+}
+.act-img {
+ width:100%;
+ border-radius: 25px 25px 0 0;
+}
+.hotel-name {
+
+}
+.price {
+
+}
+.rating {
+
+}
+footer {
+  display: flex;
+ width: 100%;
+ height: 150px;
+ background: #f2f2f2;
+ margin-top: 25px;
+}
+footer li{
+  list-style-type: none;
+}
+footer a{
+  text-decoration: none;
+  color: black;
 }
 
-.sidebar {display: flex;
-flex-direction: row;
-width: 35%;
-height:500px;
-padding: 10px 10px 10px 10px;
-border-radius: 25px;
-background-color:lightgray;
-} /*
-/*  <!--Searchbox-->
-  <div class="wrapper">
-    <div class="searchbox">
-      <p><b> Find a place for your dream vacation</b> <br>Downtown or in nature</br> </p>
-    </div>
-    <div>
-      <div class="iconsearch"><i class="fas fa-map-marker-alt"></i></div>
-      <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-      <button class="btnsearch">Search</button>
-    </div>
-    <!-- Filters-->
-    <div class="wrapper">
-      <p><b>Filters</b></p>
+.about {
+ width: 30%;
+ height: 70px;
+
+}
+.our {
+ width: 30%;
+ height: 70px;
+}
+.assistance {
+ width: 30%;
+ height: 70px;
+}
+
   
-      <div class="filters">
-        
-      </div>
-      <div class="filters">
-        <div class="filters"><i class="fas fa-money-bill-wave"></i></i></div>
-        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-        <div class="filters"><i class="fas fa-child"></i>"</i></div>
-        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-        <div class="filters"><i class="fas fa-heart"></i></i></div>
-        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-        <div class="filters"><i class="fas fa-dog"></i></i></div>
-        <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-      </div>
-<div class="wrapper">
-   <section class="card-container">
-     <h4><b> Acommodations in Marseille</h4>
-    <div class="card">1</div>
-    <div class="card">2</div>
-    <div class="card">3</div>
-    <div class="card">4</div>
-    <div class="card">5</div>
-    <div class="card">6</div>
-       </section>
-</div class="wrapper">
-  <section >
-    <div> <aside class="sidebar">
-    <div class="card">1 </div>
-    <div class="card">2</div>
-    <div class="card">3</div>
-    <div class="card">4</div>
-    <div class="card">5</div>
-    <div class="card">6</div>
-    </section> </div> 
-<!-- <div class="wrapper">
-   <section class="card-container">
-     <h4><b> Acommodations in Marseille</h4>
-     <div class= card>
-       <img src="images/some-img.png" alt="marseille beach" title="guest room" />
-       <div class= card2>
-       <img src="images/some-img.png" alt="Toulouse" title="Bath Room" />
-   <div> </section>
-     <!--  <div class= card nth child>
-       <img src="images/some-img.png" alt="toulosse snow" title="bath room" />
-   <div>--> 
-     
-   
-      <!--next block suggested structure
-    <section class="mainbox">
-      <h2>This Block contains cards</h2>
-
-      <div class="basic-card-wrapper">
-        <section class="bas-card">
-          <img src="images/some-img.png" alt="some broken image" title="some broken image" />
-          <h3>This Basic Card</h3>
-          <p>description</p>
-          <section class="rating">*****</section>
-        </section>
-        <section class="main box">
-          <h2>This Block contains cards</h2>
-
-          <div aside class="sidebar">
-            <section class="bas-card">
-              <img src="images/some-img.png" alt="some broken image" title="some broken image" />
-              <h3>This Basic Card</h3>
-              <p>description</p>
-              <section class="rating">*****</section>
-            </section>
-            </aside></div>
-
-          <section class="bas-card">
-            <img src="images/some-img.png" alt="some broken image" title="some broken image" />
-            <h3>This Basic Card</h3>
-            <p>description</p>
-            <section class="rating">*****</section>
-          </section>
-
-          <section class="bas-card">
-            <img src="images/some-img.png" alt="some broken image" title="some broken image" />
-            <h3>This Basic Card</h3>
-            <p>description</p>
-            <section class="rating">*****</section>
-          </section>
-      </div>
-
-    
-    </section>-->
-
-      <footer></footer>*/
   
