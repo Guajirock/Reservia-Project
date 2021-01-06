@@ -82,6 +82,16 @@ body {
  border:none;
  font-size: 1.2em;
  color:white;
+  background: #0065FC;
+  font-size: 14px;
+  width:80px;
+  height:50px;
+  padding:3px;
+  border-radius: 0 10px  10px 0;
+  text-align: center;
+  border:none;
+  font size: 1.2em;
+  color:white;
 }
 .btnsearch:hover{
  background:rgb(180, 174, 240);
@@ -177,11 +187,9 @@ footer a{
   text-decoration: none;
   color: black;
 }
-
 .about {
  width: 30%;
  height: 70px;
-
 }
 .our {
  width: 30%;
