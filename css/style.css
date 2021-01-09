@@ -82,22 +82,21 @@ body {
  border:none;
  font-size: 1.2em;
  color:white;
-  background: #0065FC;
-  font-size: 14px;
-  width:80px;
-  height:50px;
-  padding:3px;
-  border-radius: 0 10px  10px 0;
-  text-align: center;
-  border:none;
-  font size: 1.2em;
-  color:white;
+ background: #0065FC;
+ font-size: 14px;
+ width:80px;
+ height:50px;
+ padding:3px;
+ border-radius: 0 10px  10px 0;
+ text-align: center;
+ border:none;
+ font size: 1.2em;
+ color:white;
 }
 .btnsearch:hover{
  background:rgb(180, 174, 240);
  cursor: pointer;
 }
-/*hasta aqui NO TOCAR-->*/
 .filtersbox{
  display:inline-flex;
  width: 100%;
@@ -118,7 +117,7 @@ body {
 .filters{
  border:none;
  margin:0;
- margin-left: 20px;
+ margin-left: 35px;
  padding:0;
  background:none;
 }
@@ -141,29 +140,86 @@ body {
  padding:15px 20px 15px 40px;
  margin: -20px  
 }
-.activities {
- width: 65%;
+.info {
+  display:inline-flex;
+  flex-direction: row;
+  }
+.fa-info-circle {
+  color: #0065fc;
+}
+.content {
+ display:flex;
+ width: 100%;
+}
+.accommodations {
+ width: 70%;
  height:auto;
  padding: 10px 10px 10px 10px;
  border-radius: 25px;
  background-color:#f2f2f2;
+ margin-right: 50px;
+}
+.accommodations h3 {
+ margin-left: 10px;
+}
+.imagebox {
+
+}
+.description {
+ margin:5px 0 0 10px;
+}
+.most-popular{
+ width: 30%;
+ height: auto;
+ padding: 10px 10px 10px 10px;
+ border-radius: 25px;
+ background-color:#f2f2f2;
+}
+.most-popular .card {
+width: 100%;
+}
+.most-popular-header {
+  display: flex;
+}
+.most-popular-header h3 {
+ width: 100%;
+ margin-left: 10px;
+}
+.most-popular-header i {
+  width: 20%;
+  margin: 1em 0 1em 7em;
+  color:black;
 }
 .card-container{
-  display:flex;
-  flex-wrap: wrap;
+ display:flex;
+ flex-wrap: wrap;
+
+}
+.fa-star{
+ color: #d8d8d8;
+}
+.checked {
+  color: #0065fc;
 }
 .card {
-width: 30%; 
- /* height:200px; */
- padding: 15px;
+ width: 32%; 
+ padding: 5px;
  background-color:white;
- margin:5px 5px 5px 5px;
+ margin:5px;
  border-radius: 25px;
 }
-.act-img {
+.acc-img {
  width:100%;
  border-radius: 25px 25px 0 0;
+ height: 150px;
+ object-fit: cover;
 }
+.pop-img {
+  width:100%;
+  border-radius: 25px 25px 0 0;
+  height: 150px;
+  object-fit: cover;
+ }
 .hotel-name {
 
 }
