@@ -45,7 +45,7 @@ body {
 }
 .searchbox {
  width: 100%;
- height: 40px;
+ height: 300px;
 }
 .contentsearchbox{
  display:inline-flex;
@@ -80,18 +80,8 @@ body {
  border-radius: 0 10px  10px 0;
  text-align: center;
  border:none;
- font-size: 1.2em;
  color:white;
- background: #0065FC;
- font-size: 14px;
- width:80px;
- height:50px;
- padding:3px;
- border-radius: 0 10px  10px 0;
- text-align: center;
- border:none;
- font size: 1.2em;
- color:white;
+ font-weight: 600;
 }
 .btnsearch:hover{
  background:rgb(180, 174, 240);
@@ -162,11 +152,37 @@ body {
 .accommodations h3 {
  margin-left: 10px;
 }
+.card {
+  width: 32%; 
+  padding: 5px;
+  background-color:white;
+  margin:5px;
+  border-radius: 25px;
+ }
+ 
 .imagebox {
+  display:flex;
+  height: 150px;
+  object-fit: cover;
+ }
+ .acc-img {
+  width:100%;
+  border-radius: 25px 25px 0 0;
+  }
+.description {
+ margin:7px 0 0 10px;
+}
+.hotel-name {
+margin-bottom: 0;
 
 }
-.description {
- margin:5px 0 0 10px;
+.price {
+  margin: 8px 0 8px 0;
+
+}
+.rating {
+  margin-bottom: 7px;
+
 }
 .most-popular{
  width: 30%;
@@ -176,7 +192,19 @@ body {
  background-color:#f2f2f2;
 }
 .most-popular .card {
-width: 100%;
+ display:flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.most-popular .card .imagebox{
+ width: 35%;
+
+}
+.most-popular .card .imagebox .pop-img {
+border-radius: 25px  0 0 25px;
+}
+.most-popular .card .description{
+width: 60%;
 }
 .most-popular-header {
   display: flex;
@@ -201,40 +229,29 @@ width: 100%;
 .checked {
   color: #0065fc;
 }
-.card {
- width: 32%; 
- padding: 5px;
- background-color:white;
- margin:5px;
- border-radius: 25px;
-}
-.acc-img {
- width:100%;
- border-radius: 25px 25px 0 0;
- height: 150px;
- object-fit: cover;
-}
+
 .pop-img {
   width:100%;
   border-radius: 25px 25px 0 0;
   height: 150px;
   object-fit: cover;
  }
-.hotel-name {
 
-}
-.price {
-
-}
-.rating {
-
-}
 footer {
-  display: flex;
+
  width: 100%;
  height: 150px;
  background: #f2f2f2;
  margin-top: 25px;
+}
+.footerbox {
+  display: flex;
+ width: 100%;
+ padding-left: 20px;
+}
+footer ul{
+  margin:0;
+  padding: 0;
 }
 footer li{
   list-style-type: none;

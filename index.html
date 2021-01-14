@@ -28,53 +28,55 @@
   </nav>
   </header>
    
-     <div class="searchbox"></div>
-     <p><strong> Find a place for your dream vacation</strong> <br>Downtown or in nature</br> </p>
-    <div class="contentsearchbox"> 
-    <div class="iconsearch">
-      <i class="fas fa-map-marker-alt"></i>
-    </div>
-    <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
-    <button class="btnsearch">Search</button>
-    </div>
-    </div>
-    <section class="filtersbox">
-      <h2 class="text">Filters</h2>
-  
-      <div class="contentfiltersbox"> 
-        <button class="filters">
-          <i class="fas fa-money-bill-wave"></i>
-          <span>Low cost</span>
-        </button>
-        
-        <button class="filters">
-          <i class="fas fa-child"></i>
-          <span>Family-friendly</span>
-        </button>
-        
-        <button class="filters">
-          <i class="fas fa-heart"></i>
-          <span>Romantic</span>
-        </button>
-        
-        <button class="filters">
-          <i class="fas fa-dog"></i>
-          <span>Pets allowed</span>
-        </button>
-            
+     <div class="searchbox">
+      <p><strong> Find a place for your dream vacation</strong> <br>Downtown or in nature</br> </p>
+      <div class="contentsearchbox"> 
+        <div class="iconsearch">
+         <i class="fas fa-map-marker-alt"></i>
+         </div>
+         <input type="search" name="inputSearch" id="inputSearch" class="inputSearch">
+         <button class="btnsearch">Search</button>
       </div>
-    </section> 
+      <section class="filtersbox">
+        <h2 class="text">Filters</h2>
+    
+        <div class="contentfiltersbox"> 
+          <button class="filters">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Low cost</span>
+          </button>
+          
+          <button class="filters">
+            <i class="fas fa-child"></i>
+            <span>Family-friendly</span>
+          </button>
+          
+          <button class="filters">
+            <i class="fas fa-heart"></i>
+            <span>Romantic</span>
+          </button>
+          
+          <button class="filters">
+            <i class="fas fa-dog"></i>
+            <span>Pets allowed</span>
+          </button>
+              
+        </div>
+      </section>
+      <section class="info">
+        <i class="fas fa-info-circle"></i>
+        <p> More than 500 accomodations are available in this<br>city</br></p>
+      </section>
+    </div> <!-- end searchbox-->
+     
 
-    <section class="info">
-      <i class="fas fa-info-circle"></i>
-      <p> More than 500 accomodations are available in this<br>city</br></p>
-    </section>
+   
    <div class="content">
     <section class="accommodations">
       <h3>Accommodations in Marseille</h3>
       <div class="card-container">
       <section class="card">
-        <div class="imagebox">
+        <div class="imagebox"><!-- replicate in other activities images-->
           <img class="acc-img" src="image/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Room details"
           title="Auberge la Cannebière ">
         </div>
@@ -88,11 +90,14 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
           </div>
-          </div>
+        </div>
       </section>
       <section class="card">
-        <img class="acc-img" src="image/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port"
+        <div class="imagebox">
+          <img class="acc-img" src="image/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port"
           title="Hotel du port">
+        </div>
+        <div class="description">
           <h4 class="hotel-name">Hôtel du port</h4>
           <p class="price">Night starting at<strong> 52 <span>&#8364;</span></p></strong>
           <div class="rating">
@@ -102,23 +107,33 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
           </div>
+        </div>
+          
       </section>
       <section class="card">
-        <img class="acc-img" src="image/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Room"
+        <div class="imagebox">
+          <img class="acc-img" src="image/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Room"
           title="Les Mouttes Hotel">
-        <h4 class="hotel-name">Les mouttes Hotel</h4>
-        <p class="price">Night starting at<strong> 76 <span>&#8364;</span></p></strong>
-        <div class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          </div>
+        </div>
+        <div class="description">
+           <h4 class="hotel-name">Les mouttes Hotel</h4>
+           <p class="price">Night starting at<strong> 76 <span>&#8364;</span></p></strong>
+           <div class="rating">
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           </div>
+        </div>
+        
       </section> 
       <section class="card">
-        <img class="acc-img" src="image/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="La Mer"
+        <div class="imagebox">
+          <img class="acc-img" src="image/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="La Mer"
           title="Hotel La mer">
+        </div>
+        <div class="description">
           <h4 class="hotel-name">Hôtel de la mer</h4>
           <p class="price">Night starting at<strong> 46 <span>&#8364;</span></p></strong>
           <div class="rating">
@@ -128,10 +143,16 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
           </div>
+
+        </div>
+         
         </section>
       <section class="card">
-        <img class="acc-img" src="image/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge"
+        <div class="imagebox">
+          <img class="acc-img" src="image/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge"
           title="Le Panier">
+         </div>
+         <div class="description">
           <h4 class="hotel-name">Auberge Le Panier</h4>
           <p class="price">Night starting at<strong> 23 <span>&#8364;</span></p></strong>
           <div class="rating">
@@ -141,19 +162,27 @@
             <span class="fa fa-star checked "></span>
             <span class="fa fa-star"></span>
           </div>
+        </div>
+          
       </section>
         <section class="card">
-          <img class="acc-img" src="image/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Room"
-          title="chez Amina" width:278px>
-          <h4 class="hotel-name">Chez Amina</h4>
-          <p class="price">Night starting at<strong> 96 <span>&#8364;</span></p></strong>
-          <div class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
+          <div class="imagebox">
+            
+            <img class="acc-img" src="image/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Room"
+            title="chez Amina" width:278px>
           </div>
+          <div class="description">
+            <h4 class="hotel-name">Chez Amina</h4>
+            <p class="price">Night starting at<strong> 96 <span>&#8364;</span></p></strong>
+            <div class="rating">
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+           </div>
+          </div>
+        
         </section> 
         <button> Show more</button>
       </div> 
@@ -163,11 +192,13 @@
         <h3>Most Popular</h3>
         <i class="fas fa-chart-line"></i>
       </div>
-      <div class="card-container">
-              <div class="card-container">
-              <section class="card">
-              <img class="pop-img" src="image/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Room "
-              title="Auberge la Cannebière ">
+      <div class="card-container">     
+        <section class="card">
+          <div class="imagebox">
+            <img class="pop-img" src="image/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Room "
+            title="Auberge la Cannebière ">
+             </div>
+              <div class="description">
               <h4 class="hotel-name">Morning Sun Hotel</h4>
               <p class="price">Night starting at<strong> 128 <span>&#8364;</span></p></strong>
               <div class="rating">
@@ -177,12 +208,36 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               </div>
-              </section>
-              <section class="card">
-              <img class="pop-img" src="image/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hotel Room"
-              title="Hotel du port">
-              <h4 class="hotel-name">Au cœur de l'eau Bed and Breakfast</h4>
-              <p class="price">Night starting at<strong> 71 <span>&#8364;</span></p></strong>
+
+            </div>
+              
+        </section>
+        <section class="card">
+               <div class="imagebox">
+                <img class="pop-img" src="image/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hotel Room"
+               title="Hotel du port">
+               </div>
+               <div class="description">
+                <h4 class="hotel-name">Au cœur de l'eau Bed and Breakfast</h4>
+                <p class="price">Night starting at<strong> 71 <span>&#8364;</span></p></strong>
+                <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+               </div>
+              
+       </section>   
+       <section class="card">
+            <div class="imagebox">
+              <img class="pop-img" src="image/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Room"
+              title="Les Mouttes Hotel">
+            </div>
+            <div class="description">
+              <h4 class="hotel-name">Tout bleu et Blanc Hotel</h4>
+              <p class="price">Night starting at<strong> 68 <span>&#8364;</span></p></strong>
               <div class="rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -190,21 +245,9 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
               </div>
-              </section>   
-            <section class="card">
-            <img class="pop-img" src="image/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Room"
-            title="Les Mouttes Hotel">
-            <h4 class="hotel-name">Tout bleu et Blanc Hotel</h4>
-            <p class="price">Night starting at<strong> 68 <span>&#8364;</span></p></strong>
-            <div class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
             </div>
-              </section> 
-            </div>
+            
+       </section> 
       </div>
     </section>
    </div>
@@ -213,23 +256,32 @@
    </section>
   </section><!--end wrapper--> 
   <footer> 
-    <section class= "about"> <h4>About</h4>
-      <ul>
-      <li> <a href="#"> Site Map </a> </li>
-      <li><a href="#"> General Terms and Conditions</a> </li>
-      <li><a href="#"> Data and Privacy </a> </li>
-      </ul></section>
-      <section class= "our"> <h4> Our Accomodations</h4>
-        <ul>
-          <li><a href="#">Quality Assesment</a> </li>
-          <li><a href="#">You have a Hotel?</a> </li>
-        </ul> </section>
-      <section class= "assistance"> <h4> Assistance</h4>
-      <ul>
-        <li><a href="#"> Help Desk</a> </li>
-        <li><a href="#"> Contact Us</a> </li>
-      </ul>
-    </section>
+    <div class="wrapper"> 
+      <div class="footerbox">
+        <section class= "about">
+          <h4>About</h4>
+           <ul>
+           <li> <a href="#"> Site Map </a> </li>
+           <li><a href="#"> General Terms and Conditions</a> </li>
+           <li><a href="#"> Data and Privacy </a> </li>
+           </ul>
+         </section>
+   
+         <section class= "our"> <h4> Our Accomodations</h4>
+            <ul>
+             <li><a href="#">Quality Assesment</a> </li>
+             <li><a href="#">You have a Hotel?</a> </li>
+            </ul> </section>
+         <section class= "assistance"> <h4> Assistance</h4>
+           <ul>
+           <li><a href="#"> Help Desk</a> </li>
+           <li><a href="#"> Contact Us</a> </li>
+           </ul>
+         </section>
+      </div>
+     
+    </div>
+    
   </footer>
 
   
