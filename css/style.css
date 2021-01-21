@@ -146,9 +146,16 @@ body {
  border:2px solid lightgray;
  border-left: none;
  border-radius: 0 35px 35px 0;
- padding:15px 20px 11px 25px;
- margin: -20px;
+ padding:15px 20px 11px 27px;
+ margin: -18px;
  font-weight: 600; 
+}
+.filters span:hover{
+  background-color: #e8f0fb;
+  box-shadow: #f2f2f2 0 10px 10px 0;
+  cursor: pointer;
+  opacity: 20%;
+  transition-delay: 0.15s;
 }
 .info {
  display:flex;
@@ -156,8 +163,9 @@ body {
  margin-top: 30px;
 }
 .info .icon-container{
-margin-right: 10px;
- padding: 0 0 0 8px;
+ display: inline-flex;
+ margin-right: 10px;
+ padding: 2px 0 0 7px;
  width: 21px;
  height: 21px;
  border: #f2f2f2 2px solid;
@@ -310,68 +318,97 @@ width: 60%;
  height:500px;
  margin-top:50px;
 }
-.activitiescontainer {
+.activitiescontainer{
  display: inline-flex;
 }
-.activitiescontainer .card {
+.activities a {
+ text-decoration: none;
+ color:black;
+}
+
+.activitiescontainer .card{
  width: 310px;
- height: 450px;
+ height: 470px;
  margin-right: 30px;
  border-radius: 25px 25px 25px 25px;
  box-shadow: lightgrey 0 4px 4px 0;
 }
 .activitiescontainer .card .imagebox{
   display:flex;
-  object-fit:fill;
+  height: 90%;
 }
-.activitiescontainer .card .description{
-
- }
 .activitiescontainer .card .description .hotel-name{
-margin:10px 0 10px 20px;
+ margin:10px 0 10px 20px;
  }
 .activitiescontainer .card .imagebox .actv-img{
  width:100%;
  border-radius: 25px 25px 0 0;
+ object-fit: cover;
+}
+.mixed, .mixedtwo {
+margin: 0 30px 30px 0;
+padding-bottom: 60px;
 }
 
-.mixed, .mixedtwo {
-flex-direction: column;
-width: 310px;
-margin: 0 30px 30px 0;
+.mixed .card1, .mixed .card2 {
+ width: 310px;
+ border-radius: 25px 25px 25px 25px;
+ box-shadow: lightgrey 0 4px 4px 0;
 }
-.mixed .card, .mixedtwo .card{
-margin-bottom: 40px;
+.mixed .card1 .imagebox .actv-img, .mixed .card2 .imagebox .actv-img {
+ width: 310px;
+ border-radius: 25px 25px 0 0;
+ object-fit: cover;
 }
-.mixed .card:nth-child(1){
-height: 50%;
+.mixed .card1 {
+  height: 260px;
+  margin-bottom: 50px;
 }
-.mixed .card:nth-child(2){
-  height: 37.5%;
+.mixed .card1 .imagebox {
+height: 215px;
 }
-.mixed .card:nth-child(1) .imagebox{
-height: 170px;
+.mixed .card2 {
+height: 160px;
 }
-.mixed .card:nth-child(2) .imagebox{
-height: 125px;
+.mixed .card2 .imagebox {
+  height: 120px;
 }
-.mixedtwo .card:nth-child(1){
-  height: 35%;
+.mixed .card1 .description .hotel-name, 
+.mixed .card2 .description .hotel-name{
+  margin: 10px 10px 0 20px;
 }
-.mixedtwo .card:nth-child(2){
-height: 52.5%;
-  }
-.mixedtwo .card:nth-child(1) .imagebox{
-  height: 175px;
+.mixedtwo .card1, .mixedtwo .card2 {
+ width: 310px;
+ border-radius: 25px 25px 25px 25px;
+ box-shadow: lightgrey 0 4px 4px 0;
 }
-.mixedtwo .card:nth-child(2) .imagebox{
+.mixedtwo .card1 .imagebox .actv-img, .mixedtwo .card2 .imagebox .actv-img {
+ width: 310px;
+ border-radius: 25px 25px 0 0;
+ object-fit: cover;
+}
+.mixedtwo .card1 {
+  height: 190px;
+  margin-bottom: 30px;
+}
+.mixedtwo .card1 .imagebox {
 height: 150px;
+}
+.mixedtwo .card2 {
+height: 240px;
+}
+.mixedtwo .card2 .imagebox {
+height: 200px;
+}
+.mixedtwo .card1 .description .hotel-name, 
+.mixedtwo .card2 .description .hotel-name{
+ margin: 10px 10px 0 20px;
 }
 footer {
  width: 100%;
- height: 150px;
+ height: 175px;
  background: #f2f2f2;
- margin-top: 25px;
+ margin-top: 120px;
 }
 .footerbox {
  display: flex;
@@ -403,6 +440,81 @@ footer a{
 }
  /* css for less than 480px 
  */
- @media screen and (max-width:480px) {
- 
-}
+ @media only screen and (max-width:480px) {
+  .wrapper {
+    width:100%;
+    max-width: 480px;
+  }
+  .tophead {
+    height: 100px;
+    flex-wrap: wrap;
+   }  
+   .logo {
+    width: 70%;
+    padding-left: 15px;
+   }
+   .signup {
+     width: 30%;
+     margin-top: 28px;
+     text-align: right;
+     padding-right: 15px;
+   }
+   .signup a {
+     text-decoration: none;
+     color: #0065FC;
+     font-weight: 600;
+     
+   }
+   .new-nav {
+    width: 100%;
+   }
+   .new-nav ul li{
+    padding-left: 0;
+    margin-right: 60px;
+    text-align: center;
+    padding-bottom: 18px;
+   }
+   .new-nav ul li a {
+     padding-top: 0;
+   
+    border-bottom: #f2f2f2 2px solid;
+   }
+   .new-nav ul li a.active{
+    border-bottom: #0065FC 2px solid;
+    border-top: none;
+    padding-top: 0; 
+   }
+
+   .content {
+    flex-direction: column-reverse;
+   }
+   .searchbox {
+     padding:15px;
+
+   }
+   .accommodations {
+     width: 100%;
+     background: none;
+   }
+   .accommodations .card-container .card {
+    width: 100%;
+   }
+   .show-more {
+    background: none;
+  }
+   .most-popular  {
+  width: 100%;
+  border-radius: 0;
+  }
+   .most-popular .card-container .card {
+    width: 95%;
+    margin: 0 0 30px 8px;
+  }
+
+  
+
+
+
+
+
+  }
