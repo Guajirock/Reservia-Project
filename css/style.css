@@ -25,6 +25,7 @@ body {
  margin-top: 20px;
 }
 .new-nav {
+ display:flex;
  width: 40%;
 }
 .new-nav ul{
@@ -236,7 +237,7 @@ body {
 .rating{
  margin-bottom: 7px;
 }
-.activities-button{
+.accomodations-button{
  display: flex;
  width: 100%;
 }
@@ -362,16 +363,16 @@ padding-bottom: 60px;
 }
 .mixed .card1 {
   height: 260px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .mixed .card1 .imagebox {
-height: 215px;
+height: 220px;
 }
 .mixed .card2 {
-height: 160px;
-}
+height: 175px;
+  }
 .mixed .card2 .imagebox {
-  height: 120px;
+  height: 135px;
 }
 .mixed .card1 .description .hotel-name, 
 .mixed .card2 .description .hotel-name{
@@ -389,7 +390,7 @@ height: 160px;
 }
 .mixedtwo .card1 {
   height: 190px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .mixedtwo .card1 .imagebox {
 height: 150px;
@@ -398,7 +399,7 @@ height: 150px;
 height: 240px;
 }
 .mixedtwo .card2 .imagebox {
-height: 200px;
+height: 195px;
 }
 .mixedtwo .card1 .description .hotel-name, 
 .mixedtwo .card2 .description .hotel-name{
@@ -452,45 +453,68 @@ footer a{
    .logo {
     width: 70%;
     padding-left: 15px;
+    margin-right: 10%;
    }
    .signup {
      width: 30%;
      margin-top: 28px;
      text-align: right;
-     padding-right: 15px;
    }
-   .signup a {
+   .signup a, .signup a:visited {
      text-decoration: none;
-     color: #0065FC;
+     color: #0065FC !important;
      font-weight: 600;
-     
-   }
+    }
    .new-nav {
-    width: 100%;
+     width: 100%;
+   }
+   .new-nav ul {
+     display: flex;
+     flex-wrap: wrap;
    }
    .new-nav ul li{
     padding-left: 0;
-    margin-right: 60px;
     text-align: center;
     padding-bottom: 18px;
+    width: 45%;
+    border-bottom: #f2f2f2 2px solid;
+  }
+   .new-nav ul li:nth-child(1){
+     order:1;
+     border-bottom: none;
    }
+   .new-nav ul li:nth-child(2){
+    order:3;
+  }
+  .new-nav ul li:nth-child(3){
+    order: 4;
+    border-bottom: #f2f2f2 2px solid;
+  }
+  .new-nav ul li:nth-child(4){
+    order:2;
+    border-bottom: none;
+  }
    .new-nav ul li a {
      padding-top: 0;
-   
-    border-bottom: #f2f2f2 2px solid;
    }
-   .new-nav ul li a.active{
+   .new-nav ul li.active {
     border-bottom: #0065FC 2px solid;
     border-top: none;
     padding-top: 0; 
    }
-
+   .new-nav ul li.active a {
+     color: #0065FC;
+   }
    .content {
     flex-direction: column-reverse;
    }
    .searchbox {
      padding:15px;
-
+    
+   }
+   .contentfiltersbox {
+     display:flex;
+     flex-wrap: wrap;
    }
    .accommodations {
      width: 100%;
