@@ -26,34 +26,35 @@ body {
 }
 .new-nav {
  display:flex;
- width: 40%;
+ width: 100%;
 }
 .new-nav ul{
  list-style: none;
  margin: 0;
  padding: 0;
+ width:100%;
 }
 .new-nav ul li{
  float: left;
  padding-left: 60px;
+ vertical-align: baseline;
 }
-.new-nav ul li a,
-.new-nav ul li a:visited{
- display:block;
+.new-nav ul li a {
  text-decoration: none;
  color: black;
- padding-top: 35px;
+ display:block;
+ padding: 25px 0;
 }
-.new-nav ul li a.active{
+.new-nav ul li.active a{
  color: #0065FC;
  border-top: #0065FC 2px solid;
 }
-.new-nav ul li a:hover{
+.new-nav ul li:hover a{
  color:#DEEBFF;
 }
-.new-nav ul li a.signup{
+.new-nav ul .signup a {
  color: #0065FC;
- font-weight: 400;
+ font-weight: 600;
 }
 .searchbox{
  width: 100%;
@@ -76,7 +77,7 @@ body {
  padding:10px;
  text-align:center;
 } 
-.inputSearch{
+.inputsearch{
  font-size: 16px;
  font-weight: 600;
  width:185px;
@@ -96,6 +97,9 @@ body {
  border:none;
  color:white;
  font-weight: 600;
+}
+.btnsearch i{
+  display: none;
 }
 .btnsearch:hover{
  background:#DEEBFF;
@@ -124,6 +128,19 @@ body {
  padding:0;
  background:none;
 }
+.filters:hover i{
+ color:#DEEBFF;
+ background: #0065fc;
+ cursor:pointer;
+ position: relative;
+ z-index: 2;
+}
+.filters:hover span{
+ background-color: #e8f0fb;
+ cursor: pointer;
+ opacity: 20%;
+ transition-delay: 0.15s;
+}
 .filters i{
   font-size: 17px;
  background: #DEEBFF;
@@ -131,12 +148,7 @@ body {
  color:#0065fc;
  padding:15px;
 }
-.filters i:hover{
-  color:#DEEBFF;
-  background: #0065fc;
-  box-shadow: lightgrey 0 10px 10px 0;
-  cursor:pointer;
-}
+
 .filters:nth-child(1) i{
  padding:15px 13px;
 }
@@ -151,17 +163,10 @@ body {
  margin: -18px;
  font-weight: 600; 
 }
-.filters span:hover{
-  background-color: #e8f0fb;
-  box-shadow: #f2f2f2 0 10px 10px 0;
-  cursor: pointer;
-  opacity: 20%;
-  transition-delay: 0.15s;
-}
 .info {
  display:flex;
  width: 100%;
- margin-top: 30px;
+ margin-top: 40px;
 }
 .info .icon-container{
  display: inline-flex;
@@ -226,10 +231,11 @@ body {
  border-radius: 25px 25px 0 0;
 }
 .description{
- margin:7px 0 0 10px;
+ margin:0 0 0 10px;
 }
 .hotel-name{
  margin-bottom: 0;
+ margin-top: 7px;
 }
 .price{
  margin: 8px 0 8px 0;
@@ -245,11 +251,11 @@ body {
  font-size: 1.1em;
  border-width: 0;
  border-style: none;
- font-weight: 400;
+ font-weight: 600 ;
  margin: 20px 0 20px 15px;
  cursor: pointer;
 }
-.most-popular{
+.most-popular {
  width: 30%;
  height: auto;
  padding: 10px 10px 10px 10px;
@@ -257,22 +263,21 @@ body {
  background-color:#f2f2f2;
 }
 .most-popular a{
-  text-decoration: none;
-  color:black;
- 
-  }
-  .most-popular-header {
-    display: flex;
-  }
-  .most-popular-header h3 {
-   width: 100%;
-   margin-left: 10px;
-  }
-  .most-popular-header i {
-    width: 20%;
-    margin: 1em 0 1em 7em;
-    color:black;
-  }
+ text-decoration: none;
+ color:black;
+}
+.most-popular-header {
+ display: flex;
+}
+.most-popular-header h3 {
+ width: 100%;
+ margin-left: 10px;
+}
+.most-popular-header i {
+ width: 20%;
+ margin: 1em 0 1em 7em;
+ color:black;
+}
 .most-popular .card-container{
  display:flex;
  flex-wrap: wrap;
@@ -301,6 +306,13 @@ width: 60%;
 .most-popular .card .description .price{
   margin: 0 0 25px 0;
 }
+.most-popular a:nth-child(1) .card .description .rating{
+  margin-top: 50px; 
+ }
+.most-popular a:nth-child(2) .card .description .rating,
+.most-popular a:nth-child(3) .card .description .rating{
+  margin-top: 35px;
+} 
 .fa-star{
  color: #d8d8d8;
 }
@@ -313,44 +325,45 @@ width: 60%;
  height: 150px;
  object-fit: cover;
 }
-
 .activities {
  display: inline-block;
- height:500px;
  margin-top:50px;
 }
 .activitiescontainer{
- display: inline-flex;
+ display: flex;
+ flex-wrap: wrap;
 }
 .activities a {
  text-decoration: none;
  color:black;
 }
-
 .activitiescontainer .card{
  width: 310px;
  height: 470px;
- margin-right: 30px;
+ margin-right: 40px;
  border-radius: 25px 25px 25px 25px;
  box-shadow: lightgrey 0 4px 4px 0;
 }
 .activitiescontainer .card .imagebox{
   display:flex;
-  height: 90%;
+  height: 90.5%;
 }
-.activitiescontainer .card .description .hotel-name{
- margin:10px 0 10px 20px;
- }
 .activitiescontainer .card .imagebox .actv-img{
  width:100%;
  border-radius: 25px 25px 0 0;
  object-fit: cover;
 }
-.mixed, .mixedtwo {
-margin: 0 30px 30px 0;
-padding-bottom: 60px;
+.activitiescontainer .card .description .hotel-name{
+ margin:10px 0 10px 20px;
 }
-
+.mixed {
+ margin: 0 40px 30px 0;
+ padding-bottom: 60px;
+}
+.mixedtwo {
+ margin: 0 0px 30px 0;
+ padding-bottom: 60px;
+  }
 .mixed .card1, .mixed .card2 {
  width: 310px;
  border-radius: 25px 25px 25px 25px;
@@ -362,17 +375,17 @@ padding-bottom: 60px;
  object-fit: cover;
 }
 .mixed .card1 {
-  height: 260px;
-  margin-bottom: 35px;
+ height: 260px;
+ margin-bottom: 35px;
 }
 .mixed .card1 .imagebox {
-height: 220px;
+height: 215px;
 }
 .mixed .card2 {
 height: 175px;
-  }
+}
 .mixed .card2 .imagebox {
-  height: 135px;
+  height: 130px;
 }
 .mixed .card1 .description .hotel-name, 
 .mixed .card2 .description .hotel-name{
@@ -409,12 +422,13 @@ footer {
  width: 100%;
  height: 175px;
  background: #f2f2f2;
- margin-top: 120px;
+
 }
 .footerbox {
  display: flex;
  width: 100%;
  padding-left: 20px;
+ padding-top: 20px;
 }
 footer ul{
   margin:0;
@@ -441,101 +455,212 @@ footer a{
 }
  /* css for less than 480px 
  */
- @media only screen and (max-width:480px) {
-  .wrapper {
-    width:100%;
-    max-width: 480px;
-  }
-  .tophead {
-    height: 100px;
-    flex-wrap: wrap;
-   }  
-   .logo {
-    width: 70%;
-    padding-left: 15px;
-    margin-right: 10%;
-   }
-   .signup {
-     width: 30%;
-     margin-top: 28px;
-     text-align: right;
-   }
-   .signup a, .signup a:visited {
-     text-decoration: none;
-     color: #0065FC !important;
-     font-weight: 600;
-    }
-   .new-nav {
-     width: 100%;
-   }
-   .new-nav ul {
-     display: flex;
-     flex-wrap: wrap;
-   }
-   .new-nav ul li{
-    padding-left: 0;
-    text-align: center;
-    padding-bottom: 18px;
-    width: 45%;
-    border-bottom: #f2f2f2 2px solid;
-  }
-   .new-nav ul li:nth-child(1){
-     order:1;
-     border-bottom: none;
-   }
-   .new-nav ul li:nth-child(2){
-    order:3;
-  }
-  .new-nav ul li:nth-child(3){
-    order: 4;
-    border-bottom: #f2f2f2 2px solid;
-  }
-  .new-nav ul li:nth-child(4){
-    order:2;
-    border-bottom: none;
-  }
-   .new-nav ul li a {
-     padding-top: 0;
-   }
-   .new-nav ul li.active {
-    border-bottom: #0065FC 2px solid;
-    border-top: none;
-    padding-top: 0; 
-   }
-   .new-nav ul li.active a {
-     color: #0065FC;
-   }
-   .content {
-    flex-direction: column-reverse;
-   }
-   .searchbox {
-     padding:15px;
-    
-   }
-   .contentfiltersbox {
-     display:flex;
-     flex-wrap: wrap;
-   }
-   .accommodations {
-     width: 100%;
-     background: none;
-   }
-   .accommodations .card-container .card {
-    width: 100%;
-   }
-   .show-more {
-    background: none;
-  }
-   .most-popular  {
-  width: 100%;
-  border-radius: 0;
-  }
-   .most-popular .card-container .card {
-    width: 95%;
-    margin: 0 0 30px 8px;
-  }
+@media only screen and (max-width:480px) {
+.wrapper {
+ width:100%;
+ max-width: 480px;
+}
+.tophead {
+ height: 100px;
+ flex-wrap: wrap;
+}  
+.logo {
+ width: 70%;
+ padding-left: 15px;
+ margin-right: 10%;
+}
+.signup {
+ width: 30%;
+ margin-top: 28px;
+ text-align: right;
+}
+.signup a, .signup a:visited {
+ text-decoration: none;
+ color: #0065FC !important;
+ font-weight: 600;
+}
+.new-nav {
+ width: 100%;
+}
+.new-nav ul {
+ display: flex;
+ flex-wrap: wrap;
+}
+.new-nav ul li {
+ width: 45%;
+ height: auto;
+ padding-left: 0;
+ text-align: center;
+ padding-bottom: 18px;
+ border-bottom: #f2f2f2 2px solid;
+}
+.new-nav ul li:nth-child(1){
+ order:1;
+ border-bottom: none;
+}
+.new-nav ul li:nth-child(2){
+ order:3;
+}
+.new-nav ul li:nth-child(3){
+ order: 4;
+ border-bottom: #f2f2f2 2px solid;
+}
+.new-nav ul li:nth-child(4){
+ order:2;
+ border-bottom: none;
+}
+.new-nav ul li a {
+ padding-top: 0;
+}
+.new-nav ul li.active {
+ border-bottom: #0065FC 2px solid;
+ border-top: none;
+ padding-top: 0; 
+}
+.new-nav ul li.active a {
+ color: #0065FC;
+}
+.content {
+ flex-direction: column-reverse;
+}
+.searchbox {
+  padding: 15px 0 0 0;
+  height: auto;
+}
+.searchbox p{
+ padding-left: 17px;
 
-  
+}
+.inputsearch {
+ width:100%;
+ font-weight: 19px; 
+}
+.btnsearch {
+  width: 70px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.btnsearch i{
+  font-size: 1.2rem;
+  display: block;
+}
+.btnsearch span {
+  display: none;
+}
+.iconsearch {
+ width: 70px;
+}
+.contentsearchbox {
+  width: 100%;
+  padding-left:17px;
+}
+.contentfiltersbox {
+ display:flex;
+ flex-wrap: wrap;
+ }
+ .contentfiltersbox .filters {
+  margin-left: 17px;
+  margin-bottom: 17px;
+  margin-right: 17px;
+ }
+.contentfiltersbox .filters:nth-child(1){
+  order: 1;
+ }
+ .contentfiltersbox .filters:nth-child(2){
+order: 3;
+width: 100%;
+ }
+ .contentfiltersbox .filters:nth-child(3){
+  order: 1;
+ }
+ .contentfiltersbox .filters:nth-child(4){
+ order: 4;
+ width: 100%;
+ }
+ .filtersbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+ }
+.info {
+  width: 100%;
+  margin-left: 17px; 
+  margin-top: 200px;
+ }
+.info .icon-container {
+ padding: 2px 0 0 5px;
+}
+ .info p br {
+   display: none;
+ }
+ .filtersbox .text {
+ margin: 17px;
+}
+.accommodations {
+ width: 100%;
+ background: none;
+}
+.accommodations .card-container .card {
+ width: 100%;
+}
+.show-more {
+ background: none;
+}
+.most-popular  {
+ width: 100%;
+ border-radius: 0;
+}
+.most-popular .card-container .card {
+ width: 95%;
+ margin: 0 0 30px 8px;
+}
+.activities {
+ padding: 23px;
+ margin-top:0;
+}
+.activitiescontainer .card{
+ width: 100%;
+ margin-bottom: 30px;
+ height:auto;
+ padding-bottom: 10px;
+}
+.activitiescontainer .card .imagebox {
+ height: 10rem;
+}
+.mixed, .mixedtwo {
+ width: 100%;
+ margin:0;
+}
+.mixed .card1, .mixed .card2  {
+ width: 100%;
+}
+.mixedtwo .card1, .mixedtwo .card2  {
+ width: 100%;
+}
+.mixed .card1 .imagebox .actv-img, .mixed .card2 .imagebox .actv-img {
+width: 100%;
+}
+.mixedtwo .card1 .imagebox .actv-img, .mixedtwo .card2 .imagebox .actv-img {
+ width: 100%;
+}
+footer{
+ height: auto;
+}
+.footerbox {
+ flex-wrap: wrap;
+ padding-bottom: 30px;
+}
+.footerbox .about,
+.footerbox .our,
+.footerbox .assistance {
+ width: 100%;
+ height: auto;
+ padding: 10px;
+}
+
+
 
 
 
