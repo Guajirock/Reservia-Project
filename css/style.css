@@ -21,7 +21,7 @@ body {
  height: 100px;
 } 
 .logo {
- width: 60%;
+ width: 55%;
  margin-top: 20px;
 }
 .new-nav {
@@ -36,15 +36,13 @@ body {
 }
 .new-nav ul li{
  float: left;
- padding-left: 60px;
  vertical-align: baseline;
- margin-left: 15px;
 }
 .new-nav ul li a {
  text-decoration: none;
  color: black;
  display:block;
- padding: 25px 0;
+ padding: 1.5rem 3rem;
 }
 .new-nav ul li.active a{
  color: #0065FC;
@@ -59,11 +57,15 @@ body {
 }
 .searchbox{
  width: 100%;
- height: 300px;
+ height: auto;
 }
+.searchbox span{
+font-weight: 600;
+}
+
 .contentsearchbox{
  display:inline-flex;
- width: 315px;
+ width: 25rem;
 }
 .iconsearch{
  background: #f2f2f2;
@@ -81,17 +83,17 @@ body {
 .inputsearch{
  font-size: 16px;
  font-weight: 600;
- width:155px;
- height:50px;
- padding-left: 5px;
+ width: 14rem;
+ height: 3.1rem;
+ padding-left: 0.25rem;
  border: 1px solid #f2f2f2;
  border-left: none;
 }
 .btnsearch{
  background: #0065FC;
  font-size: 14px;
- width:80px;
- height:50px;
+ width: 5rem;
+ height: 3.1rem;
  padding:3px;
  border-radius: 0 10px  10px 0;
  text-align: center;
@@ -125,7 +127,7 @@ body {
 .filters{
  border:none;
  margin:0;
- margin-left: 35px;
+ margin-left: 0.75rem;
  padding:0;
  background:none;
 }
@@ -193,7 +195,6 @@ body {
  display:flex;
  width: 100%;
 }
-
 .accommodations {
  width: 70%;
  height:auto;
@@ -242,6 +243,9 @@ body {
 }
 .price{
  margin: 8px 0 8px 0;
+}
+.price span{
+  font-weight: 600;
 }
 .rating{
  margin-bottom: 7px;
@@ -428,15 +432,15 @@ footer {
  padding-top: 20px;
 }
 footer ul{
-  margin:0;
-  padding: 0;
+ margin:0;
+ padding: 0;
 }
 footer li{
-  list-style-type: none;
+ list-style-type: none;
 }
 footer a{
-  text-decoration: none;
-  color: black;
+ text-decoration: none;
+ color: black;
 }
 .about {
  width: 30%;
@@ -450,8 +454,121 @@ footer a{
  width: 30%;
  height: 70px;
 }
- /* css for less than 480px 
- */
+/* Media Query for  769px < 1024px  */
+@media only screen and (min-width:769px)and (max-width:1024px){
+
+.html {
+ max-width: 1024px;
+}
+.body {
+ max-width: 1024px;
+}
+.wrapper {
+ max-width: 1024px;
+ min-width: 769px;
+ margin:  0 2rem;
+}
+.logo {
+ width:30%;
+margin-top: 20px;
+}
+.accommodations {
+  margin-right: 25px;
+  padding:10px 0 10px 0;
+  width: 65%;
+}
+.accommodations h3 {
+  padding: 0 0 0 0.75rem; 
+}
+.accommodations .card-container .card {
+  width:45%;
+  margin: 5px 5px 22px 15px;
+}
+.most-popular{
+  width: 38%;
+}
+.most-popular .card-container .card {
+ width: 100%;
+ margin:0.5rem 0 1.5rem 0;
+  
+}
+.activities h3{
+  padding: 0 0 0 1rem;
+}
+}
+/* Media Query for  481px < 768px  */
+@media only screen and (min-width:481px)and (max-width:768px){
+    
+.html {
+ max-width: 768px;
+}
+.body {
+ max-width: 768px;
+}
+.wrapper {
+ max-width: 768px;
+ min-width: 481px;
+ margin:  0 2rem;
+}
+.logo {
+ width: 24%;
+ margin-top: 20px;
+}
+.new-nav ul li a {
+ padding: 1rem 1.75rem;
+}
+.filtersbox {
+ width: 100%;
+ margin-top: 20px;
+}
+.filters i {
+ font-size: 0.75rem;
+ padding: 10px 11px;
+}
+.filters span{
+ font-size: 0.75rem;
+ padding:0.5rem 1rem 0.5rem 1.5rem;
+}
+.filters:nth-child(1) i{
+ padding:10px 9px;
+}
+.filters:nth-child(2) i{
+ padding:10px 10px;
+}
+.content {
+ display: inline-block;
+}
+.accommodations{
+ width: 100%;
+ margin-bottom: 3rem;
+}
+.accommodations .card-container .card {
+ width: 45%; 
+}
+ .most-popular {
+ width: 100%;
+}
+.most-popular-header h3 {
+ width: 10rem;
+}
+.most-popular .card-container .card {
+ width: 52%;
+} 
+.activitiescontainer {
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+}
+.activitiescontainer .card{
+margin-bottom: 2rem;
+margin-right: 50px;
+}
+.mixed, .mixedtwo {
+ margin-bottom: 0;
+ margin-right: 0;
+}
+}
+
 @media only screen and (max-width:480px) {
 .wrapper {
  width:100%;
@@ -462,8 +579,7 @@ footer a{
  flex-wrap: wrap;
 }  
 .logo {
- width: 70%;
- padding-left: 15px;
+ width: 50%;
 }
 .signup {
  width: 30%;
@@ -471,7 +587,6 @@ footer a{
  text-align: right;
  font-weight: normal;
 }
-
 .signup a, .signup a:visited {
  text-decoration: none;
  color: #0065FC !important;
@@ -490,6 +605,9 @@ footer a{
  text-align: center;
  border-bottom: #f2f2f2 3px solid;
  margin-left:0;
+}
+.new-nav ul li a{
+padding: 1.5rem 1rem;
 }
 .new-nav ul li:nth-child(1){
  order:1;
@@ -528,7 +646,11 @@ footer a{
   height: auto;
 }
 .searchbox p{
- padding-left: 17px;
+ padding-left: 1rem;
+ width: 98%;
+}
+.searchbox .info p {
+  padding-left: 0;
 }
 .inputsearch {
  width:100%;
@@ -549,7 +671,7 @@ footer a{
 }
 .contentsearchbox {
   width: 95%;
-  padding-left:17px;
+  padding-left:1rem;
 }
 .contentfiltersbox {
  display:flex;
@@ -579,7 +701,7 @@ order: 3;
 .info {
   width: 95%;
   margin-left: 17px; 
-  margin-top: 200px;
+  margin-top: 12rem;
  }
 .info .icon-container {
  padding: 2px 4px 2px 5px;
@@ -620,6 +742,7 @@ order: 3;
  margin-bottom: 30px;
  height:auto;
  padding-bottom: 10px;
+
 }
 .activitiescontainer .card .imagebox {
  height: 11rem;
@@ -676,10 +799,4 @@ footer{
  padding: 10px;
 }
 
-
-
-
-
-
-
-  }
+}
