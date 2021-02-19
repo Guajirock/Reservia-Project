@@ -172,7 +172,7 @@ body {
 .info {
   display: flex;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 .info .icon-container {
   display: inline-flex;
@@ -457,116 +457,475 @@ footer a {
   width: 30%;
   height: 70px;
 }
+
 /* Media Query for  769px < 1024px  */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .html {
-    max-width: 1024px;
-  }
-  .body {
-    max-width: 1024px;
-  }
   .wrapper {
+    width: 100%;
     max-width: 1024px;
     min-width: 769px;
-    margin: 0 2rem;
+  }
+  .tophead {
+    height: 150px;
+    flex-wrap: wrap;
   }
   .logo {
+    width: 50%;
+  }
+  .signup {
     width: 30%;
-    margin-top: 20px;
+    margin-top: 28px;
+    text-align: right;
+    font-weight: normal;
+  }
+  .signup a,
+  .signup a:visited {
+    text-decoration: none;
+    color: #0065fc !important;
+  }
+  .new-nav {
+    width: 100%;
+  }
+  .new-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .new-nav ul li {
+    width: 50%;
+    height: auto;
+    padding-left: 0;
+    text-align: center;
+    border-bottom: #f2f2f2 3px solid;
+    margin-left: 0;
+  }
+  .new-nav ul li a {
+    padding: 1.5rem 1rem;
+  }
+  .new-nav ul li:nth-child(1) {
+    order: 1;
+    border-bottom: none;
+  }
+  .new-nav ul li:nth-child(2) {
+    order: 3;
+  }
+  .new-nav ul li:nth-child(3) {
+    order: 4;
+  }
+  .new-nav ul li:nth-child(4) {
+    order: 2;
+    border-bottom: none;
+  }
+  .new-nav ul li:nth-child(4) a {
+    border-bottom: none;
+  }
+  .new-nav ul li a {
+    padding-top: 0;
+  }
+  .new-nav ul li.active {
+    padding-top: 0;
+    border-bottom: #0065fc 3px solid;
+    font-weight: 600;
+  }
+  .new-nav ul li.active a {
+    color: #0065fc;
+    border: none;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .searchbox {
+    padding: 0;
+    height: auto;
+  }
+  .searchbox p {
+    padding-left: 1rem;
+    width: 98%;
+  }
+  .searchbox .info p {
+    padding-left: 0;
+  }
+  .inputsearch {
+    width: 100%;
+  }
+  .btnsearch {
+    width: 70px;
+    border-radius: 10px;
+  }
+  .btnsearch i {
+    font-size: 1.2rem;
+    display: block;
+  }
+  .btnsearch span {
+    display: none;
+  }
+  .iconsearch {
+    width: 70px;
+  }
+  .contentsearchbox {
+    width: 95%;
+    padding-left: 1rem;
+  }
+  .contentfiltersbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contentfiltersbox .filters {
+    margin-left: 17px;
+    margin-bottom: 17px;
+  }
+  .contentfiltersbox .filters:nth-child(1) {
+    order: 1;
+  }
+  .contentfiltersbox .filters:nth-child(2) {
+    order: 3;
+  }
+  .contentfiltersbox .filters:nth-child(3) {
+    order: 1;
+  }
+  .contentfiltersbox .filters:nth-child(4) {
+    order: 4;
+  }
+  .filtersbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .info {
+    width: 95%;
+    margin-left: 17px;
+    margin-top: 12rem;
+  }
+  .info .icon-container {
+    padding: 2px 4px 2px 5px;
+  }
+  .info p br {
+    display: none;
+  }
+  .filtersbox .text {
+    margin: 17px;
   }
   .accommodations {
-    margin-right: 25px;
-    padding: 10px 0 10px 0;
-    width: 65%;
-  }
-  .accommodations h3 {
-    padding: 0 0 0 0.75rem;
+    width: 100%;
+    background: none;
   }
   .accommodations .card-container .card {
-    width: 45%;
-    margin: 5px 5px 22px 15px;
+    width: 100%;
+  }
+  .show-more {
+    background: none;
   }
   .most-popular {
-    width: 38%;
+    width: 100%;
+    border-radius: 0;
   }
   .most-popular .card-container .card {
-    width: 100%;
-    margin: 0.5rem 0 1.5rem 0;
+    width: 95%;
+    margin: 0 0 30px 8px;
   }
-  .activities h3 {
-    padding: 0 0 0 1rem;
+  .activities {
+    padding: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .activitiescontainer .card {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .activitiescontainer .card .imagebox {
+    height: 11rem;
+  }
+  .mixed,
+  .mixedtwo {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .mixed .card1,
+  .mixed .card2 {
+    width: 100%;
+    height: auto;
+  }
+  .mixed .card1 .imagebox,
+  .mixed .card2 .imagebox {
+    height: 11rem;
+  }
+  .mixed .card1 .description .hotel-name,
+  .mixed .card2 .description .hotel-name,
+  .mixedtwo .card1 .description .hotel-name,
+  .mixedtwo .card2 .description .hotel-name {
+    padding-bottom: 25px;
+  }
+
+  .mixedtwo .card1,
+  .mixedtwo .card2 {
+    width: 100%;
+    height: auto;
+  }
+  .mixedtwo .card1 .imagebox,
+  .mixedtwo .card2 .imagebox {
+    height: 11rem;
+  }
+  .mixed .card1 .imagebox .actv-img,
+  .mixed .card2 .imagebox .actv-img {
+    width: 100%;
+  }
+  .mixedtwo .card1 .imagebox .actv-img,
+  .mixedtwo .card2 .imagebox .actv-img {
+    width: 100%;
+  }
+  footer {
+    height: auto;
+  }
+  .footerbox {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .footerbox .about,
+  .footerbox .our,
+  .footerbox .assistance {
+    width: 100%;
+    height: auto;
+    padding: 10px;
   }
 }
 /* Media Query for  481px < 768px  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .html {
-    max-width: 768px;
-  }
-  .body {
-    max-width: 768px;
-  }
   .wrapper {
+    width: 100%;
     max-width: 768px;
     min-width: 481px;
-    margin: 0 2rem;
+  }
+  .tophead {
+    height: 150px;
+    flex-wrap: wrap;
   }
   .logo {
-    width: 24%;
-    margin-top: 20px;
+    width: 50%;
+  }
+  .signup {
+    width: 30%;
+    margin-top: 28px;
+    text-align: right;
+    font-weight: normal;
+  }
+  .signup a,
+  .signup a:visited {
+    text-decoration: none;
+    color: #0065fc !important;
+  }
+  .new-nav {
+    width: 100%;
+  }
+  .new-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .new-nav ul li {
+    width: 50%;
+    height: auto;
+    padding-left: 0;
+    text-align: center;
+    border-bottom: #f2f2f2 3px solid;
+    margin-left: 0;
   }
   .new-nav ul li a {
-    padding: 1rem 1.75rem;
+    padding: 1.5rem 1rem;
   }
-  .filtersbox {
-    width: 100%;
-    margin-top: 20px;
+  .new-nav ul li:nth-child(1) {
+    order: 1;
+    border-bottom: none;
   }
-  .filters i {
-    font-size: 0.75rem;
-    padding: 10px 11px;
+  .new-nav ul li:nth-child(2) {
+    order: 3;
   }
-  .filters span {
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem 0.5rem 1.5rem;
+  .new-nav ul li:nth-child(3) {
+    order: 4;
   }
-  .filters:nth-child(1) i {
-    padding: 10px 9px;
+  .new-nav ul li:nth-child(4) {
+    order: 2;
+    border-bottom: none;
   }
-  .filters:nth-child(2) i {
-    padding: 10px 10px;
+  .new-nav ul li:nth-child(4) a {
+    border-bottom: none;
+  }
+  .new-nav ul li a {
+    padding-top: 0;
+  }
+  .new-nav ul li.active {
+    padding-top: 0;
+    border-bottom: #0065fc 3px solid;
+    font-weight: 600;
+  }
+  .new-nav ul li.active a {
+    color: #0065fc;
+    border: none;
   }
   .content {
-    display: inline-block;
+    flex-direction: column-reverse;
+  }
+  .searchbox {
+    padding: 0;
+    height: auto;
+  }
+  .searchbox p {
+    padding-left: 1rem;
+    width: 98%;
+  }
+  .searchbox .info p {
+    padding-left: 0;
+  }
+  .inputsearch {
+    width: 100%;
+  }
+  .btnsearch {
+    width: 70px;
+    border-radius: 10px;
+  }
+  .btnsearch i {
+    font-size: 1.2rem;
+    display: block;
+  }
+  .btnsearch span {
+    display: none;
+  }
+  .iconsearch {
+    width: 70px;
+  }
+  .contentsearchbox {
+    width: 95%;
+    padding-left: 1rem;
+  }
+  .contentfiltersbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contentfiltersbox .filters {
+    margin-left: 17px;
+    margin-bottom: 17px;
+  }
+  .contentfiltersbox .filters:nth-child(1) {
+    order: 1;
+  }
+  .contentfiltersbox .filters:nth-child(2) {
+    order: 3;
+  }
+  .contentfiltersbox .filters:nth-child(3) {
+    order: 1;
+  }
+  .contentfiltersbox .filters:nth-child(4) {
+    order: 4;
+  }
+  .filtersbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .info {
+    width: 95%;
+    margin-left: 17px;
+    margin-top: 12rem;
+  }
+  .info .icon-container {
+    padding: 2px 4px 2px 5px;
+  }
+  .info p br {
+    display: none;
+  }
+  .filtersbox .text {
+    margin: 17px;
   }
   .accommodations {
     width: 100%;
-    margin-bottom: 3rem;
+    background: none;
   }
   .accommodations .card-container .card {
-    width: 45%;
+    width: 100%;
+  }
+  .show-more {
+    background: none;
   }
   .most-popular {
     width: 100%;
-  }
-  .most-popular-header h3 {
-    width: 10rem;
+    border-radius: 0;
   }
   .most-popular .card-container .card {
-    width: 52%;
+    width: 95%;
+    margin: 0 0 30px 8px;
   }
-  .activitiescontainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .activities {
+    padding: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .activitiescontainer .card {
-    margin-bottom: 2rem;
-    margin-right: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .activitiescontainer .card .imagebox {
+    height: 11rem;
   }
   .mixed,
   .mixedtwo {
-    margin-bottom: 0;
-    margin-right: 0;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .mixed .card1,
+  .mixed .card2 {
+    width: 100%;
+    height: auto;
+  }
+  .mixed .card1 .imagebox,
+  .mixed .card2 .imagebox {
+    height: 11rem;
+  }
+  .mixed .card1 .description .hotel-name,
+  .mixed .card2 .description .hotel-name,
+  .mixedtwo .card1 .description .hotel-name,
+  .mixedtwo .card2 .description .hotel-name {
+    padding-bottom: 25px;
+  }
+
+  .mixedtwo .card1,
+  .mixedtwo .card2 {
+    width: 100%;
+    height: auto;
+  }
+  .mixedtwo .card1 .imagebox,
+  .mixedtwo .card2 .imagebox {
+    height: 11rem;
+  }
+  .mixed .card1 .imagebox .actv-img,
+  .mixed .card2 .imagebox .actv-img {
+    width: 100%;
+  }
+  .mixedtwo .card1 .imagebox .actv-img,
+  .mixedtwo .card2 .imagebox .actv-img {
+    width: 100%;
+  }
+  footer {
+    height: auto;
+  }
+  .footerbox {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .footerbox .about,
+  .footerbox .our,
+  .footerbox .assistance {
+    width: 100%;
+    height: auto;
+    padding: 10px;
   }
 }
 
